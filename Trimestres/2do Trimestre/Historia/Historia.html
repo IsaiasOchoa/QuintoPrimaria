@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1er Trimestre</title>
+
+    <!-- Fuentes de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Dirt&display=swap"
+        rel="stylesheet">
+
+    <!-- Mis estilos css -->
+    <link rel="stylesheet" href="../../../css/style.css">
+
+    <!-- iconos de Font Awesome -->
+    <script src="https://kit.fontawesome.com/311fb8a6ed.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main>
+        <section class="main main-Trimestres" id="main-section">
+            <div class="encabezado">
+                <h1><span>Elije</span> un numero del <span>1 al 10</span></h1>
+                <img src="../../../img/General-Trimestres/personaje-pregunta.png">
+                <img class="uno" src="../../../img/General-Trimestres/interrogacion.png" alt="">
+                <img class="dos" src="../../../img/General-Trimestres/interrogacion.png" alt="">
+            </div>
+            <div class="botones">
+                <a href="#" onclick="pregunta('b1','p1')" id="b1">1</a>
+                <a href="#" onclick="pregunta('b2','p2')" id="b2">2</a>
+                <a href="#" onclick="pregunta('b3','p3')" id="b3">3</a>
+                <a href="#" onclick="pregunta('b4','p4')" id="b4">4</a>
+                <a href="#" onclick="pregunta('b5','p5')" id="b5">5</a>
+                <a href="#" onclick="pregunta('b6','p6')" id="b6">6</a>
+                <a href="#" onclick="pregunta('b7','p7')" id="b7">7</a>
+                <a href="#" onclick="pregunta('b8','p8')" id="b8">8</a>
+                <a href="#" onclick="pregunta('b9','p9')" id="b9">9</a>
+                <a href="#" onclick="pregunta('b10','p10')" id="b10">10</a>
+            </div>
+            <div class="volver">
+                <a href="../../2do Trimestre/2doTrimestre.html"><i class="fa-solid fa-arrow-left"></i></a>
+                <a href="../../../index.html"><i class="fa-solid fa-circle-xmark"></i></a>
+            </div>
+        </section>
+
+        <!-- Pantallas de Preguntas -->
+
+        <!-- pregunta 1 -->
+        <article style="display: none;" class="main preguntas" id="p1">
+            <div>
+                <h2>1. ¿Por qué empeoró la situación económica de México, después de la guerra de Reforma?</h2>
+                
+                <ul>
+                    <li><button onclick="victoria('p1')">Porque durante la guerra se abandonó el
+                        campo y la minería, el comercio había
+                        decaído y no se recibían suficientes
+                        impuestos.
+                        </button></li>
+                    <li><button id="1" onclick="gameOver('p1','1')">Porque cuando termino la guerra,
+                        gastaron todo el dinero en celebrar. 
+                        </button></li>
+                    <li><button id="2" onclick="gameOver('p1', '2')">La situación económica era muy buena.
+                    </button></li>
+                    <li><button id="3" onclick="gameOver('p1', '3')">Gastaron todo el dinero en construir un
+                        nuevo aeropuerto</button></li>
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 2 -->
+        <article style="display: none;" class="main preguntas" id="p2">
+            <div>
+                <h2>2. ¿Por qué los conservadores le retiraron el apoyo al Imperio de Maximiliano?</h2>
+             
+                <ul>
+                    <li><button id="4" onclick="gameOver('p2','4')">Maximiliano quería irse de México.
+                    </button></li>
+                    <li><button onclick="victoria('p2')">Porque en vez de oponerse a las
+                        Leyes de Reforma, las ratificó</button></li>
+                    <li><button id="5" onclick="gameOver('p2', '5')">Nunca retiraron su apoyo al
+                        emperador Maximiliano.
+                        </button></li>
+                    <li><button id="6" onclick="gameOver('p2', '6')">Por presiones del ejército francés.
+                    </button></li>
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 3 -->
+        <article style="display: none;" class="main preguntas" id="p3">
+            <div>
+                <h2>3. Después de la derrota del imperio de Maximiliano. ¿Quién ocupó la presidencia de México?</h2>
+              
+                <ul>
+                    <li><button id="7" onclick="gameOver('p3','7')">Vicente Fox Quezada.
+                    </button></li>
+                    <li><button id="8" onclick="gameOver('p3', '8')">Felipe Calderón
+                    </button></li>
+                    <li><button id="9" onclick="gameOver('p3', '9')">Enrique Peña Nieto
+                    </button></li>
+                    <li><button onclick="victoria('p3')">Benito Juárez; y restauró un gobierno
+                        republicano con ideas liberales.
+                        </button></li>
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 4 -->
+        <article style="display: none;" class="main preguntas" id="p4">
+            <div>
+                <h2>4. ¿Cuál fue la consecuencia de suspender la deuda que se tenía con Inglaterra, Francia y España?</h2>
+              
+                <ul>
+                    <li><button id="10" onclick="gameOver('p4','10')">Tras una negociación, los tres países
+                        esperaron que México reanudara los
+                        pagos.
+                        </button></li>
+                    <li><button id="11" onclick="gameOver('p4', '11')">España no aceptó negociar e inició una
+                        intervención militar en México
+                        </button></li>
+                    <li><button onclick="victoria('p4')">Francia no aceptó negociar e inició una
+                        intervención militar en México.
+                        </button></li>
+                    <li><button id="12" onclick="gameOver('p4', '12')">Inglaterra no aceptó negociar e inició una
+                        intervención militar en México.
+                        </button></li>
+
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 5 -->
+        <article style="display: none;" class="main preguntas" id="p5">
+            <div>
+                <h2>5. ¿En qué fecha, Ignacio Zaragoza con su ejército liberal, logró una importante victoria contra el ejército Frances, conocida como la Batalla de Puebla?</h2>
+             
+                <ul>
+                    <li><button id="13" onclick="gameOver('p5','13')">El 25 de diciembre de 2012.
+                    </button></li>
+                    <li><button onclick="victoria('p5')">El 5 de mayo de 1862.
+                    </button></li>
+                    <li><button id="14" onclick="gameOver('p5', '14')">El 17 de julio de 1861
+                    </button></li>
+                    <li><button id="15" onclick="gameOver('p5', '15')">El 5 de febrero del 1995.
+                    </button></li>
+
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 6 -->
+        <article style="display: none;" class="main preguntas" id="p6">
+            <div>
+                <h2>6. ¿Etapa de la historia de México en la que se reeligió cinco veces consecutivas el presidente Porfirio Díaz?</h2>
+               
+                <ul>
+                    <li><button id="16" onclick="gameOver('p6','16')">Reforma
+                    </button></li>
+                    <li><button id="17" onclick="gameOver('p6', '17')">Republica restaurada.
+                    </button></li>
+                    <li><button id="18" onclick="gameOver('p6', '18')">Independencia
+                    </button></li>
+                    <li><button onclick="victoria('p6')">Porfiriato
+                    </li>
+
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 7 -->
+        <article style="display: none;" class="main preguntas" id="p7">
+            <div>
+                <h2>7. Los siguientes avances tecnológicos modificaron la vida de los mexicanos durante el Porfiriato, excepto:</h2>
+                
+                <ul>
+                    <li><button onclick="victoria('p7')">Las computadoras.
+                    </button></li>
+                    <li><button id="19" onclick="gameOver('p7','19')">El automóvil.
+                    </button></li>
+                    <li><button id="20" onclick="gameOver('p7', '20')">El cinematógrafo.
+                    </button></li>
+                    <li><button id="21" onclick="gameOver('p7', '21')">La electricidad.
+                    </button></li>
+                    
+
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 8 -->
+        <article style="display: none;" class="main preguntas" id="p8">
+            <div>
+                <h2>8. Es una gran extensión de tierra que sirve para las labores agrícolas y ganaderas y que pertenecen a una sola persona. </h2>
+                
+                <ul>
+                    <li><button id="22" onclick="gameOver('p8','22')">Sindicato.
+                    </button></li>
+                    <li><button id="23" onclick="gameOver('p8', '23')">Fábrica
+                    </button></li>
+                    <li><button id="24" onclick="gameOver('p8', '24')">Hacienda
+                    </button></li>
+                    <li><button onclick="victoria('p8')">Latifundio
+                    </button></li>
+
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 9 -->
+        <article style="display: none;" class="main preguntas" id="p9">
+            <div>
+                <h2>9. Es una forma de gobierno caracterizada por el ejercicio del poder sin límite de una sola persona o institución.</h2>
+               
+                <ul>
+                    <li><button onclick="victoria('p9')">Dictadura.
+                    </button></li>
+                    <li><button id="25" onclick="gameOver('p9','25')">Imperialismo.
+                    </button></li>
+                    <li><button id="26" onclick="gameOver('p9', '26')">Monarquía.
+                    </button></li>
+                    <li><button id="27" onclick="gameOver('p9', '27')">Democracia.
+                    </button></li>
+
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 10 -->
+        <article style="display: none;" class="main preguntas" id="p10">
+            <div>
+                <h2>10. Es una organización de trabajadores unidos para la defensa y mejora de sus condiciones laborales.</h2>
+                <ul>
+                    <li><button id="28" onclick="gameOver('p10','28')">Hacienda.
+                    </button></li>
+                    <li><button id="29" onclick="gameOver('p10', '29')">Latifundio.</button></li>
+                    <li><button onclick="victoria('p10')">Sindicato.
+                    </button></li>
+                    <li><button id="30" onclick="gameOver('p10', '30')">Fábrica.
+                    </button></li>
+                    
+                </ul>
+            </div>
+        </article>
+
+        <!-- Fin de Pantalla de preguntas -->
+
+
+
+
+
+        <!-- Pantalla de Game Over -->
+        <article style="display: none;" class="gameOver" id="gameOver">
+            <img src="../../../img/General-Trimestres/personaje-pregunta.png" alt="">
+            <p>Sigue Intentando <i class="fa-regular fa-face-frown"></i></p>
+            <button onclick="volverResponder()">Intentalo de Nuevo</button>
+        </article>
+        <!-- Fin de Pantalla Game Over -->
+
+
+        <!-- Pantalla de Victoria -->
+        <article style="display: none;" class="win" id="victoria">
+            <img src="../../../img/General-Trimestres/batman.png" alt="">
+            <p>¡BatiGenial!</p>
+            <button onclick="volverMenu()">Menu</button>
+        </article>
+        <!-- Fin de pantalla de Victoria -->
+
+    </main>
+    <!-- Agregando los scripts -->
+    <script src="../../../JS/main.js"></script>
+</body>
+
+</html>

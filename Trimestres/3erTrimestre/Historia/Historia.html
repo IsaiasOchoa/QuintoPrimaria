@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1er Trimestre</title>
+
+    <!-- Fuentes de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Dirt&display=swap"
+        rel="stylesheet">
+
+    <!-- Mis estilos css -->
+    <link rel="stylesheet" href="../../../css/style.css">
+
+    <!-- iconos de Font Awesome -->
+    <script src="https://kit.fontawesome.com/311fb8a6ed.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main>
+        <section class="main main-Trimestres" id="main-section">
+            <div class="encabezado">
+                <h1><span>Elije</span> un numero del <span>1 al 10</span></h1>
+                <img src="../../../img/General-Trimestres/personaje-pregunta.png">
+                <img class="uno" src="../../../img/General-Trimestres/interrogacion.png" alt="">
+                <img class="dos" src="../../../img/General-Trimestres/interrogacion.png" alt="">
+            </div>
+            <div class="botones">
+                <a href="#" onclick="pregunta('b1','p1')" id="b1">1</a>
+                <a href="#" onclick="pregunta('b2','p2')" id="b2">2</a>
+                <a href="#" onclick="pregunta('b3','p3')" id="b3">3</a>
+                <a href="#" onclick="pregunta('b4','p4')" id="b4">4</a>
+                <a href="#" onclick="pregunta('b5','p5')" id="b5">5</a>
+                <a href="#" onclick="pregunta('b6','p6')" id="b6">6</a>
+                <a href="#" onclick="pregunta('b7','p7')" id="b7">7</a>
+                <a href="#" onclick="pregunta('b8','p8')" id="b8">8</a>
+                <a href="#" onclick="pregunta('b9','p9')" id="b9">9</a>
+                <a href="#" onclick="pregunta('b10','p10')" id="b10">10</a>
+            </div>
+            <div class="volver">
+                <a href="../../3erTrimestre/3erTrimestre.html"><i class="fa-solid fa-arrow-left"></i></a>
+                <a href="../../../index.html"><i class="fa-solid fa-circle-xmark"></i></a>
+            </div>
+        </section>
+
+        <!-- Pantallas de Preguntas -->
+
+        <!-- pregunta 1 -->
+        <article style="display: none;" class="main preguntas" id="p1">
+            <div>
+                <h2>1. Fue presidente de México (1934-1940) y durante su gobierno el país nacionalizó su industria petrolera.</h2>
+                
+                <ul>
+                    <li><button onclick="victoria('p1')">Lázaro Cárdenas
+                    </button></li>
+                    <li><button id="1" onclick="gameOver('p1','1')">Álvaro Obregón
+                    </button></li>
+                    <li><button id="2" onclick="gameOver('p1', '2')">Venustiano Carranza
+                    </button></li>
+                    <li><button id="3" onclick="gameOver('p1', '3')">Plutarco Elías Calles
+                    </button></li>
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 2 -->
+        <article style="display: none;" class="main preguntas" id="p2">
+            <div>
+                <h2>2. Fue presidente de México de (1924- 1928) impulso las reformas necesarias para que México consiguiera un mejor desarrollo económico y social, creó importantes instituciones como el Banco de México en 1925. </h2>
+             
+                <ul>
+                    <li><button id="4" onclick="gameOver('p2','4')">Álvaro Obregón
+                    </button></li>
+                    <li><button onclick="victoria('p2')">Plutarco Elías Calles
+                    </button></li>
+                    <li><button id="5" onclick="gameOver('p2', '5')">Venustiano Carranza
+                    </button></li>
+                    <li><button id="6" onclick="gameOver('p2', '6')">Lázaro Cárdenas
+                    </button></li>
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 3 -->
+        <article style="display: none;" class="main preguntas" id="p3">
+            <div>
+                <h2>3. Derecho muy importante de los mexicanos que fue reprimido por el gobierno durante el movimiento estudiantil de 1968.</h2>
+              
+                <ul>
+                    <li><button id="7" onclick="gameOver('p3','7')">Libertad de culto
+                    </button></li>
+                    <li><button id="8" onclick="gameOver('p3', '8')">Libertad de elección
+                    </button></li>
+                    <li><button id="9" onclick="gameOver('p3', '9')">Libertad de prensa
+                    </button></li>
+                    <li><button onclick="victoria('p3')">Libertad de expresión
+                    </button></li>
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 4 -->
+        <article style="display: none;" class="main preguntas" id="p4">
+            <div>
+                <h2>4. Suceso del siglo XX que México aprovecho para lograr un acuerdo con Estados Unidos para reducir hasta en 90% su deuda externa.</h2>
+              
+                <ul>
+                    <li><button id="10" onclick="gameOver('p4','10')">Guerra Cristera.
+                    </button></li>
+                    <li><button id="11" onclick="gameOver('p4', '11')">Revolución Mexicana.
+                    </button></li>
+                    <li><button onclick="victoria('p4')">Segunda Guerra Mundial
+                    </button></li>
+                    <li><button id="12" onclick="gameOver('p4', '12')">Guerra del Golfo.
+                    </button></li>
+
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 5 -->
+        <article style="display: none;" class="main preguntas" id="p5">
+            <div>
+                <h2>5. Derecho muy importante de los mexicanos que fue reprimido por el gobierno durante el movimiento estudiantil de 1968</h2>
+             
+                <ul>
+                    <li><button id="13" onclick="gameOver('p5','13')">Libertad de culto
+                    </button></li>
+                    <li><button onclick="victoria('p5')">Libertad de expresión.
+                    </button></li>
+                    <li><button id="14" onclick="gameOver('p5', '14')">Libertad de elección</button></li>
+                    <li><button id="15" onclick="gameOver('p5', '15')">Libertad de prensa
+                    </button></li>
+
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 6 -->
+        <article style="display: none;" class="main preguntas" id="p6">
+            <div>
+                <h2>6. En 1953 fue reconocido el derecho de las mujeres para:</h2>
+               
+                <ul>
+                    <li><button id="16" onclick="gameOver('p6','16')">Casarse con quien ellas decidan
+                    </button></li>
+                    <li><button id="17" onclick="gameOver('p6', '17')">Para realizar estudios superiores.
+                    </button></li>
+                    <li><button id="18" onclick="gameOver('p6', '18')">Participar en los Juegos Olímpicos.
+                    </button></li>
+                    <li><button onclick="victoria('p6')">Votar y ser candidatas en
+                        elecciones federales
+                        </li>
+
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 7 -->
+        <article style="display: none;" class="main preguntas" id="p7">
+            <div>
+                <h2>7. Son los países con los que México firmó el tratado comercial más importante</h2>
+                
+                <ul>
+                    <li><button onclick="victoria('p7')">Estados Unidos y Canadá.
+                    </button></li>
+                    <li><button id="19" onclick="gameOver('p7','19')">Estados Unidos y Francia
+                    </button></li>
+                    <li><button id="20" onclick="gameOver('p7', '20')">Inglaterra y China.
+                    </button></li>
+                    <li><button id="21" onclick="gameOver('p7', '21')">Japón y Alemania.
+                    </button></li>
+                    
+
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 8 -->
+        <article style="display: none;" class="main preguntas" id="p8">
+            <div>
+                <h2>8. ¿Quién instauro en 1959 los Libros de Texto Gratuitos?</h2>
+                
+                <ul>
+                    <li><button id="22" onclick="gameOver('p8','22')">Josefa Ortiz de Domínguez
+                    </button></li>
+                    <li><button id="23" onclick="gameOver('p8', '23')">Guillermo González Camarena
+                    </button></li>
+                    <li><button id="24" onclick="gameOver('p8', '24')">Felipe Calderón Hinojosa
+                    </button></li>
+                    <li><button onclick="victoria('p8')">Jaime Torres Bodet
+                    </button></li>
+
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 9 -->
+        <article style="display: none;" class="main preguntas" id="p9">
+            <div>
+                <h2>9. ¿Quién invento en 1963 la Televisión a color?</h2>
+               
+                <ul>
+                    <li><button onclick="victoria('p9')">Guillermo González Camarena
+                    </button></li>
+                    <li><button id="25" onclick="gameOver('p9','25')">Josefa Ortiz de Domínguez
+                    </button></li>
+                    <li><button id="26" onclick="gameOver('p9', '26')">Jaime Torres Bodet
+                    </button></li>
+                    <li><button id="27" onclick="gameOver('p9', '27')">Felipe Calderón Hinojosa
+                    </button></li>
+
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 10 -->
+        <article style="display: none;" class="main preguntas" id="p10">
+            <div>
+                <h2>10. Es el sector de la economía mexicana que recibe menos atención del gobierno</h2>
+                <ul>
+                    <li><button id="28" onclick="gameOver('p10','28')">Industrial.
+                    </button></li>
+                    <li><button id="29" onclick="gameOver('p10', '29')">Servicios
+                    </button></li>
+                    <li><button onclick="victoria('p10')">Agropecuario
+                    </button></li>
+                    <li><button id="30" onclick="gameOver('p10', '30')">Educativo
+                    </button></li>
+                    
+                </ul>
+            </div>
+        </article>
+
+        <!-- Fin de Pantalla de preguntas -->
+
+
+
+
+
+        <!-- Pantalla de Game Over -->
+        <article style="display: none;" class="gameOver" id="gameOver">
+            <img src="../../../img/General-Trimestres/personaje-pregunta.png" alt="">
+            <p>Sigue Intentando <i class="fa-regular fa-face-frown"></i></p>
+            <button onclick="volverResponder()">Intentalo de Nuevo</button>
+        </article>
+        <!-- Fin de Pantalla Game Over -->
+
+
+        <!-- Pantalla de Victoria -->
+        <article style="display: none;" class="win" id="victoria">
+            <img src="../../../img/General-Trimestres/batman.png" alt="">
+            <p>¡BatiGenial!</p>
+            <button onclick="volverMenu()">Menu</button>
+        </article>
+        <!-- Fin de pantalla de Victoria -->
+
+    </main>
+    <!-- Agregando los scripts -->
+    <script src="../../../JS/main.js"></script>
+</body>
+
+</html>

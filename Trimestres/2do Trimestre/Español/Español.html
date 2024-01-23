@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1er Trimestre</title>
+
+    <!-- Fuentes de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Dirt&display=swap"
+        rel="stylesheet">
+
+    <!-- Mis estilos css -->
+    <link rel="stylesheet" href="../../../css/style.css">
+
+    <!-- iconos de Font Awesome -->
+    <script src="https://kit.fontawesome.com/311fb8a6ed.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main>
+        <section class="main main-Trimestres" id="main-section">
+            <div class="encabezado">
+                <h1><span>Elije</span> un numero del <span>1 al 10</span></h1>
+                <img src="../../../img/General-Trimestres/personaje-pregunta.png">
+                <img class="uno" src="../../../img/General-Trimestres/interrogacion.png" alt="">
+                <img class="dos" src="../../../img/General-Trimestres/interrogacion.png" alt="">
+            </div>
+            <div class="botones">
+                <a href="#" onclick="pregunta('b1','p1')" id="b1">1</a>
+                <a href="#" onclick="pregunta('b2','p2')" id="b2">2</a>
+                <a href="#" onclick="pregunta('b3','p3')" id="b3">3</a>
+                <a href="#" onclick="pregunta('b4','p4')" id="b4">4</a>
+                <a href="#" onclick="pregunta('b5','p5')" id="b5">5</a>
+                <a href="#" onclick="pregunta('b6','p6')" id="b6">6</a>
+                <a href="#" onclick="pregunta('b7','p7')" id="b7">7</a>
+                <a href="#" onclick="pregunta('b8','p8')" id="b8">8</a>
+                <a href="#" onclick="pregunta('b9','p9')" id="b9">9</a>
+                <a href="#" onclick="pregunta('b10','p10')" id="b10">10</a>
+            </div>
+            <div class="volver">
+                <a href="../../2do Trimestre/2doTrimestre.html"><i class="fa-solid fa-arrow-left"></i></a>
+                <a href="../../../index.html"><i class="fa-solid fa-circle-xmark"></i></a>
+            </div>
+        </section>
+
+        <!-- Pantallas de Preguntas -->
+
+        <!-- pregunta 1 -->
+        <article style="display: none;" class="main preguntas" id="p1">
+            <div>
+                <h2>1. Historias extraordinarias y fantásticas que tratan de explicar fenómenos de la naturaleza y sucesos históricos.</h2>
+                
+                <ul>
+                    <li><button onclick="victoria('p1')">Leyendas
+                    </button></li>
+                    <li><button id="1" onclick="gameOver('p1','1')">Cuentos
+                    </button></li>
+                    <li><button id="2" onclick="gameOver('p1', '2')">Noticias
+                    </button></li>
+                    <li><button id="3" onclick="gameOver('p1', '3')">Fabulas
+                    </button></li>
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 2 -->
+        <article style="display: none;" class="main preguntas" id="p2">
+            <div>
+                <h2>2. Elige la familia léxica </h2>
+             
+                <ul>
+                    <li><button id="4" onclick="gameOver('p2','4')">Florero, flotador, flota, flor.
+                    </button></li>
+                    <li><button onclick="victoria('p2')">Zapato, zapatería, zapatero, zapatilla.
+                    </button></li>
+                    <li><button id="5" onclick="gameOver('p2', '5')">Antes, antena, anteojos, anotación
+                    </button></li>
+                    <li><button id="6" onclick="gameOver('p2', '6')">Carne, carro, cartera, cartón.
+                    </button></li>
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 3 -->
+        <article style="display: none;" class="main preguntas" id="p3">
+            <div>
+                <h2>3. ¿Cuál es la función de un boletín informativo?</h2>
+              
+                <ul>
+                    <li><button id="7" onclick="gameOver('p3','7')">Informar las noticias del día
+                    </button></li>
+                    <li><button id="8" onclick="gameOver('p3', '8')">Ofrecer productos y servicios.
+                    </button></li>
+                    <li><button id="9" onclick="gameOver('p3', '9')">Anunciar oportunidades de empleo.
+                    </button></li>
+                    <li><button onclick="victoria('p3')">Informar de forma regular a un grupo
+                        que comparte un interés particular</button></li>
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 4 -->
+        <article style="display: none;" class="main preguntas" id="p4">
+            <div>
+                <h2>4. ¿Qué aspectos se consideran al redactar el contenido de un boletín informativo?</h2>
+              
+                <ul>
+                    <li><button id="10" onclick="gameOver('p4','10')">Si será gratuito o tendrá un costo.
+                    </button></li>
+                    <li><button id="11" onclick="gameOver('p4', '11')">El medio de difusión, si será entregado
+                        en persona, colocado en lugares
+                        públicos o incluso enviado por correo
+                        electrónico.
+                        </button></li>
+                    <li><button onclick="victoria('p4')">Usar párrafos breves y directos. Incluir
+                        ilustraciones y utilizar un lenguaje
+                        adaptado al público al que se dirige</button></li>
+                    <li><button id="12" onclick="gameOver('p4', '12')">La distribución del texto y las
+                        imágenes, diseño de la caratula, el
+                        nombre y logotipo, tamaño y tipo de
+                        letra.
+                        </button></li>
+
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 5 -->
+        <article style="display: none;" class="main preguntas" id="p5">
+            <div>
+                <h2>5. ¿Qué aspectos se consideran en la edición de un boletín informativo?</h2>
+             
+                <ul>
+                    <li><button id="13" onclick="gameOver('p5','13')">Usar párrafos breves y directos. Incluir
+                        ilustraciones y utilizar un lenguaje
+                        adaptado al público al que se dirige
+                        </button></li>
+                    <li><button onclick="victoria('p5')">La distribución del texto y las
+                        imágenes, diseño de la caratula, el
+                        nombre y logotipo, tamaño y tipo de
+                        letra
+                        </button></li>
+                    <li><button id="14" onclick="gameOver('p5', '14')">Si será gratuito o tendrá un costo
+                    </button></li>
+                    <li><button id="15" onclick="gameOver('p5', '15')">El medio de difusión, si será entregado
+                        en persona, colocado en lugares
+                        públicos o incluso enviado por correo
+                        electrónico.
+                        </button></li>
+
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 6 -->
+        <article style="display: none;" class="main preguntas" id="p6">
+            <div>
+                <h2>6. ¿Qué es la jerarquización de la información?</h2>
+               
+                <ul>
+                    <li><button id="16" onclick="gameOver('p6','16')">Ordenar datos en tarjetas.
+                    </button></li>
+                    <li><button id="17" onclick="gameOver('p6', '17')">Ordenar datos por categorías.
+                    </button></li>
+                    <li><button id="18" onclick="gameOver('p6', '18')">Ordenar datos por colores</button></li>
+                    <li><button onclick="victoria('p6')">Ordenar datos por importancia
+                    </li>
+
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 7 -->
+        <article style="display: none;" class="main preguntas" id="p7">
+            <div>
+                <h2>7. ¿Para qué son útiles los mapas conceptuales y los cuadros sinópticos?</h2>
+                
+                <ul>
+                    <li><button onclick="victoria('p7')">Para redactar textos expositivos.
+                    </button></li>
+                    <li><button id="19" onclick="gameOver('p7','19')">Para redactar textos poéticos.
+                    </button></li>
+                    <li><button id="20" onclick="gameOver('p7', '20')">Para redactar leyendas</button></li>
+                    <li><button id="2Para redactar leyendas" onclick="gameOver('p7', '21')">Para redactar adivinanzas
+                    </button></li>
+                    
+
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 8 -->
+        <article style="display: none;" class="main preguntas" id="p8">
+            <div>
+                <h2>8. Son ejemplos de oraciones conectivas,excepto</h2>
+                
+                <ul>
+                    <li><button id="22" onclick="gameOver('p8','22')">Por lo tanto
+                    </button></li>
+                    <li><button id="23" onclick="gameOver('p8', '23')">Sin embargo,
+                    </button></li>
+                    <li><button id="24" onclick="gameOver('p8', '24')">Después de que
+                    </button></li>
+                    <li><button onclick="victoria('p8')">Falta poco para vacaciones.
+                    </button></li>
+
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 9 -->
+        <article style="display: none;" class="main preguntas" id="p9">
+            <div>
+                <h2>9. ¿Cuál es la función del moderador en un debate?</h2>
+               
+                <ul>
+                    <li><button onclick="victoria('p9')">Asigna los turnos de exposición a los
+                        participantes del debate.
+                        </button></li>
+                    <li><button id="25" onclick="gameOver('p9','25')">Expone el tema ante el público y
+                        responde preguntas
+                        </button></li>
+                    <li><button id="26" onclick="gameOver('p9', '26')">Realiza la investigación del tema que
+                        se va a debatir
+                        </button></li>
+                    <li><button id="27" onclick="gameOver('p9', '27')">Recopila las fuentes bibliográficas
+                        para presentarlas durante el debate
+                        </button></li>
+
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 10 -->
+        <article style="display: none;" class="main preguntas" id="p10">
+            <div>
+                <h2>10. Historias extraordinarias y fantásticas que tratan de explicar fenómenos de la naturaleza y sucesos históricos.</h2>
+                <ul>
+                    <li><button id="28" onclick="gameOver('p10','28')">Cuentos
+                    </button></li>
+                    <li><button id="29" onclick="gameOver('p10', '29')">Noticias
+                    </button></li>
+                    <li><button onclick="victoria('p10')">Leyendas
+                    </button></li>
+                    <li><button id="30" onclick="gameOver('p10', '30')">Fabulas
+                    </button></li>
+                    
+                </ul>
+            </div>
+        </article>
+
+        <!-- Fin de Pantalla de preguntas -->
+
+
+
+
+
+        <!-- Pantalla de Game Over -->
+        <article style="display: none;" class="gameOver" id="gameOver">
+            <img src="../../../img/General-Trimestres/personaje-pregunta.png" alt="">
+            <p>Sigue Intentando <i class="fa-regular fa-face-frown"></i></p>
+            <button onclick="volverResponder()">Intentalo de Nuevo</button>
+        </article>
+        <!-- Fin de Pantalla Game Over -->
+
+
+        <!-- Pantalla de Victoria -->
+        <article style="display: none;" class="win" id="victoria">
+            <img src="../../../img/General-Trimestres/batman.png" alt="">
+            <p>¡BatiGenial!</p>
+            <button onclick="volverMenu()">Menu</button>
+        </article>
+        <!-- Fin de pantalla de Victoria -->
+
+    </main>
+    <!-- Agregando los scripts -->
+    <script src="../../../JS/main.js"></script>
+</body>
+
+</html>

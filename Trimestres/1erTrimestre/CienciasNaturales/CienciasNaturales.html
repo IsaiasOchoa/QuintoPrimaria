@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1er Trimestre</title>
+
+    <!-- Fuentes de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Dirt&display=swap"
+        rel="stylesheet">
+
+    <!-- Mis estilos css -->
+    <link rel="stylesheet" href="../../../css/style.css">
+
+    <!-- iconos de Font Awesome -->
+    <script src="https://kit.fontawesome.com/311fb8a6ed.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main>
+        <section class="main main-Trimestres" id="main-section">
+            <div class="encabezado">
+                <h1><span>Elije</span> un numero del <span>1 al 10</span></h1>
+                <img src="../../../img/General-Trimestres/personaje-pregunta.png">
+                <img class="uno" src="../../../img/General-Trimestres/interrogacion.png" alt="">
+                <img class="dos" src="../../../img/General-Trimestres/interrogacion.png" alt="">
+            </div>
+            <div class="botones">
+                <a href="#" onclick="pregunta('b1','p1')" id="b1">1</a>
+                <a href="#" onclick="pregunta('b2','p2')" id="b2">2</a>
+                <a href="#" onclick="pregunta('b3','p3')" id="b3">3</a>
+                <a href="#" onclick="pregunta('b4','p4')" id="b4">4</a>
+                <a href="#" onclick="pregunta('b5','p5')" id="b5">5</a>
+                <a href="#" onclick="pregunta('b6','p6')" id="b6">6</a>
+                <a href="#" onclick="pregunta('b7','p7')" id="b7">7</a>
+                <a href="#" onclick="pregunta('b8','p8')" id="b8">8</a>
+                <a href="#" onclick="pregunta('b9','p9')" id="b9">9</a>
+                <a href="#" onclick="pregunta('b10','p10')" id="b10">10</a>
+            </div>
+            <div class="volver">
+                <a href="../../1erTrimestre/1erTrimestre.html"><i class="fa-solid fa-arrow-left"></i></a>
+                <a href="../../../index.html"><i class="fa-solid fa-circle-xmark"></i></a>
+            </div>
+        </section>
+
+        <!-- Pantallas de Preguntas -->
+
+        <!-- pregunta 1 -->
+        <article style="display: none;" class="main preguntas" id="p1">
+            <div>
+                <h2>1. Los humanos comemos varias veces al día. La acción por medio de la cual ingerimos comidas y bebidas ¿se llama?</h2>
+                
+                <ul>
+                    <li><button onclick="victoria('p1')">Alimentacion</button></li>
+                    <li><button id="1" onclick="gameOver('p1','1')">Dieta</button></li>
+                    <li><button id="2" onclick="gameOver('p1', '2')">Cena</button></li>
+                    <li><button id="3" onclick="gameOver('p1', '3')">Almuerzo</button></li>
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 2 -->
+        <article style="display: none;" class="main preguntas" id="p2">
+            <div>
+                <h2>2. ¿Qué es una dieta?</h2>
+             
+                <ul>
+                    <li><button id="4" onclick="gameOver('p2','4')">Un régimen alimenticio para bajar de peso.
+                    </button></li>
+                    <li><button onclick="victoria('p2')">La variedad de alimentos que consumimos
+                        de manera cotidiana.
+                        </button></li>
+                    <li><button id="5" onclick="gameOver('p2', '5')">La comida que ingieren las personas
+                        obesas.
+                        </button></li>
+                    <li><button id="6" onclick="gameOver('p2', '6')">La comida chatarra, como refrescos y
+                        frituras.
+                        </button></li>
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 3 -->
+        <article style="display: none;" class="main preguntas" id="p3">
+            <div>
+                <h2>3. Proporcionan energía y se encuentran principalmente en cereales como el maíz, el arroz, la avena, el trigo, en tubérculos y en frutas.</h2>
+              
+                <ul>
+                    <li><button id="7" onclick="gameOver('p3','7')">Grasas y lípidos</button></li>
+                    <li><button id="8" onclick="gameOver('p3', '8')">Vitaminas y minerales
+                    </button></li>
+                    <li><button id="9" onclick="gameOver('p3', '9')">Proteínas.
+                    </button></li>
+                    <li><button onclick="victoria('p3')">Carbohidratos.
+                    </button></li>
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 4 -->
+        <article style="display: none;" class="main preguntas" id="p4">
+            <div>
+                <h2>4. Provienen de alimentos de origen animal, como la carne, los huevos y la leche.</h2>
+              
+                <ul>
+                    <li><button id="10" onclick="gameOver('p4','10')">Grasas y lípidos</button></li>
+                    <li><button id="11" onclick="gameOver('p4', '11')">Carbohidratos
+                    </button></li>
+                    <li><button onclick="victoria('p4')">Proteínas</button></li>
+                    <li><button id="12" onclick="gameOver('p4', '12')">Vitaminas y minerales
+                    </button></li>
+
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 5 -->
+        <article style="display: none;" class="main preguntas" id="p5">
+            <div>
+                <h2>5. Se encuentran en las verduras y frutas, estos nutrimentos permiten mantener un crecimiento saludable y ayudan a prevenir enfermedades. </h2>
+             
+                <ul>
+                    <li><button id="13" onclick="gameOver('p5','13')">Grasas y lípidos
+                    </button></li>
+                    <li><button onclick="victoria('p5')">Vitaminas y minerales</button></li>
+                    <li><button id="14" onclick="gameOver('p5', '14')">Proteínas.
+                    </button></li>
+                    <li><button id="15" onclick="gameOver('p5', '15')">Carbohidratos
+                    </button></li>
+
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 6 -->
+        <article style="display: none;" class="main preguntas" id="p6">
+            <div>
+                <h2>6. Son problemas causados por mala alimentación, consisten en la acumulación excesiva de grasa en el cuerpo.</h2>
+               
+                <ul>
+                    <li><button id="16" onclick="gameOver('p6','16')">Dolor de articulaciones
+                    </button></li>
+                    <li><button id="17" onclick="gameOver('p6', '17')">Nerviosismo y ansiedad
+                    </button></li>
+                    <li><button id="18" onclick="gameOver('p6', '18')">Trastornos psicológicos.
+                    </button></li>
+                    <li><button onclick="victoria('p6')">Sobrepeso y obesidad
+                    </li>
+
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 7 -->
+        <article style="display: none;" class="main preguntas" id="p7">
+            <div>
+                <h2>7. ¿Cuál es la principal causa del sobrepeso y la obesidad?</h2>
+                
+                <ul>
+                    <li><button onclick="victoria('p7')">Consumo excesivo de alimentos
+                        industrializados.
+                        </button></li>
+                    <li><button id="19" onclick="gameOver('p7','19')">Comer muchas frutas y verduras.
+                    </button></li>
+                    <li><button id="20" onclick="gameOver('p7', '20')">Hacer ejercicio solo 10 minutos
+                        diarios.
+                        </button></li>
+                    <li><button id="21" onclick="gameOver('p7', '21')">Comer por nerviosismo</button></li>
+                    
+
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 8 -->
+        <article style="display: none;" class="main preguntas" id="p8">
+            <div>
+                <h2>8. Sustancias toxicas que cuando se consumen producen lesiones en el sistema nervioso y hacen que los órganos dejen de funcionar correctamente. </h2>
+                
+                <ul>
+                    <li><button id="22" onclick="gameOver('p8','22')">Refrescos y frituras. 
+                    </button></li>
+                    <li><button id="23" onclick="gameOver('p8', '23')">Frutas y verduras.
+                    </button></li>
+                    <li><button id="24" onclick="gameOver('p8', '24')">Lípidos y grasas</button></li>
+                    <li><button onclick="victoria('p8')">Drogas, alcohol y tabaco.
+                    </button></li>
+
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 9 -->
+        <article style="display: none;" class="main preguntas" id="p9">
+            <div>
+                <h2>9. ¿Cómo se llaman los cambios físicos que aparecen en la pubertad tanto en hombres como en mujeres?</h2>
+               
+                <ul>
+                    <li><button onclick="victoria('p9')">Caracteres sexuales secundarios
+                    </button></li>
+                    <li><button id="25" onclick="gameOver('p9','25')">Caracteres sexuales primarios.
+                    </button></li>
+                    <li><button id="26" onclick="gameOver('p9', '26')">Menstruación
+                    </button></li>
+                    <li><button id="27" onclick="gameOver('p9', '27')">Ovulación.
+                    </button></li>
+
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 10 -->
+        <article style="display: none;" class="main preguntas" id="p10">
+            <div>
+                <h2>10. Proceso en el que los ovarios liberan células reproductoras femeninas, llamadas óvulos.</h2>
+                <ul>
+                    <li><button id="28" onclick="gameOver('p10','28')">Menstruación
+                    </button></li>
+                    <li><button id="29" onclick="gameOver('p10', '29')">Eyaculación
+                    </button></li>
+                    <li><button onclick="victoria('p10')">Ovulación.
+                    </button></li>
+                    <li><button id="30" onclick="gameOver('p10', '30')">Fecundación.
+                    </button></li>
+                    
+                </ul>
+            </div>
+        </article>
+
+        <!-- Fin de Pantalla de preguntas -->
+
+
+
+
+
+        <!-- Pantalla de Game Over -->
+        <article style="display: none;" class="gameOver" id="gameOver">
+            <img src="../../../img/General-Trimestres/personaje-pregunta.png" alt="">
+            <p>Sigue Intentando <i class="fa-regular fa-face-frown"></i></p>
+            <button onclick="volverResponder()">Intentalo de Nuevo</button>
+        </article>
+        <!-- Fin de Pantalla Game Over -->
+
+
+        <!-- Pantalla de Victoria -->
+        <article style="display: none;" class="win" id="victoria">
+            <img src="../../../img/General-Trimestres/batman.png" alt="">
+            <p>¡BatiGenial!</p>
+            <button onclick="volverMenu()">Menu</button>
+        </article>
+        <!-- Fin de pantalla de Victoria -->
+
+    </main>
+    <!-- Agregando los scripts -->
+    <script src="../../../JS/main.js"></script>
+</body>
+
+</html>

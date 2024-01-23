@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1er Trimestre</title>
+
+    <!-- Fuentes de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Dirt&display=swap"
+        rel="stylesheet">
+
+    <!-- Mis estilos css -->
+    <link rel="stylesheet" href="../../../css/style.css">
+
+    <!-- iconos de Font Awesome -->
+    <script src="https://kit.fontawesome.com/311fb8a6ed.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main>
+        <section class="main main-Trimestres" id="main-section">
+            <div class="encabezado">
+                <h1><span>Elije</span> un numero del <span>1 al 10</span></h1>
+                <img src="../../../img/General-Trimestres/personaje-pregunta.png">
+                <img class="uno" src="../../../img/General-Trimestres/interrogacion.png" alt="">
+                <img class="dos" src="../../../img/General-Trimestres/interrogacion.png" alt="">
+            </div>
+            <div class="botones">
+                <a href="#" onclick="pregunta('b1','p1')" id="b1">1</a>
+                <a href="#" onclick="pregunta('b2','p2')" id="b2">2</a>
+                <a href="#" onclick="pregunta('b3','p3')" id="b3">3</a>
+                <a href="#" onclick="pregunta('b4','p4')" id="b4">4</a>
+                <a href="#" onclick="pregunta('b5','p5')" id="b5">5</a>
+                <a href="#" onclick="pregunta('b6','p6')" id="b6">6</a>
+                <a href="#" onclick="pregunta('b7','p7')" id="b7">7</a>
+                <a href="#" onclick="pregunta('b8','p8')" id="b8">8</a>
+                <a href="#" onclick="pregunta('b9','p9')" id="b9">9</a>
+                <a href="#" onclick="pregunta('b10','p10')" id="b10">10</a>
+            </div>
+            <div class="volver">
+                <a href="../../1erTrimestre/1erTrimestre.html"><i class="fa-solid fa-arrow-left"></i></a>
+                <a href="../../../index.html"><i class="fa-solid fa-circle-xmark"></i></a>
+            </div>
+        </section>
+
+        <!-- Pantallas de Preguntas -->
+
+        <!-- pregunta 1 -->
+        <article style="display: none;" class="main preguntas" id="p1">
+            <div>
+                <h2>1. Parte de una fábula que nos hace reflexionar sobre las virtudes, defectos y las consecuencias de nuestros actos, y además nos deja una enseñanza. </h2>
+                
+                <ul>
+                    <li><button onclick="victoria('p1')">Moraleja</button></li>
+                    <li><button id="1" onclick="gameOver('p1','1')">Cuento</button></li>
+                    <li><button id="2" onclick="gameOver('p1', '2')">Leyenda</button></li>
+                    <li><button id="3" onclick="gameOver('p1', '3')">Relato</button></li>
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 2 -->
+        <article style="display: none;" class="main preguntas" id="p2">
+            <div>
+                <h2>2. Cuando el propósito de los anuncios es presentar información acerca de un beneficio para las personas y tienen un fin social o político se denominan:</h2>
+             
+                <ul>
+                    <li><button id="4" onclick="gameOver('p2','4')">Anuncios publicitarios
+                    </button></li>
+                    <li><button onclick="victoria('p2')">Propaganda.
+                    </button></li>
+                    <li><button id="5" onclick="gameOver('p2', '5')">Anuncios culturales</button></li>
+                    <li><button id="6" onclick="gameOver('p2', '6')">Anuncios televisivos.
+                    </button></li>
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 3 -->
+        <article style="display: none;" class="main preguntas" id="p3">
+            <div>
+                <h2>3. ¿Cómo se llaman las frases o palabras que se usan para unir enunciados? Por ejemplo: “y así es como”, “Sin embargo”, “En realidad”. </h2>
+              
+                <ul>
+                    <li><button id="7" onclick="gameOver('p3','7')">Sustantivos
+                    </button></li>
+                    <li><button id="8" onclick="gameOver('p3', '8')">Adjetivos
+                    </button></li>
+                    <li><button id="9" onclick="gameOver('p3', '9')">Verbos
+                    </button></li>
+                    <li><button onclick="victoria('p3')">Nexos
+                    </button></li>
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 4 -->
+        <article style="display: none;" class="main preguntas" id="p4">
+            <div>
+                <h2>4. Cuando vas a redactar un texto expositivo sobre un tema específico: ¿Qué preguntas se deben efectuar para establecer la relación causa efecto?</h2>
+              
+                <ul>
+                    <li><button id="10" onclick="gameOver('p4','10')">¿Cómo son?, ¿cuándo ocurre?
+                    </button></li>
+                    <li><button id="11" onclick="gameOver('p4', '11')">Cómo se ve?, ¿cuánto cuesta?
+                    </button></li>
+                    <li><button onclick="victoria('p4')">¿Por qué ocurre?, ¿qué provoca?, ¿a causa
+                        de qué?
+                        </button></li>
+                    <li><button id="12" onclick="gameOver('p4', '12')">¿Cómo te llamas?, ¿cuántos años tienes?
+                    </button></li>
+
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 5 -->
+        <article style="display: none;" class="main preguntas" id="p5">
+            <div>
+                <h2>5. Es una de las principales características de los textos expositivos.</h2>
+             
+                <ul>
+                    <li><button id="13" onclick="gameOver('p5','13')">Muestran lo que un autor cree o
+                        supone sobre un tema</button></li>
+                    <li><button onclick="victoria('p5')">Muestran de forma neutra y objetiva
+                        determinados hechos o realidades
+                        con información veraz y confiable.
+                        </button></li>
+                    <li><button id="14" onclick="gameOver('p5', '14')">Muestra determinados hechos o
+                        realidades extraídos de una sola
+                        fuente informativa.
+                        </button></li>
+                    <li><button id="15" onclick="gameOver('p5', '15')">No se requiere verificar la información.
+                        </button></li>
+
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 6 -->
+        <article style="display: none;" class="main preguntas" id="p6">
+            <div>
+                <h2>6. ¿Cómo podrías saber rápidamente el contenido de un libro y la página que muestra un tema?</h2>
+               
+                <ul>
+                    <li><button id="16" onclick="gameOver('p6','16')">Leyendo rápidamente todo el libro.
+                    </button></li>
+                    <li><button id="17" onclick="gameOver('p6', '17')">Preguntando por internet
+                    </button></li>
+                    <li><button id="18" onclick="gameOver('p6', '18')">Preguntar a alguien que ya leyó el libro.
+                    </button></li>
+                    <li><button onclick="victoria('p6')">Revisando el índice
+                    </li>
+
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 7 -->
+        <article style="display: none;" class="main preguntas" id="p7">
+            <div>
+                <h2>7. ¿En qué libro podrías investigar información para establecer la relación de causa-efecto de los terremotos?</h2>
+                
+                <ul>
+                    <li><button onclick="victoria('p7')">“Los terremotos” y “Los terremotos
+                        más catastróficos”
+                        </button></li>
+                    <li><button id="19" onclick="gameOver('p7','19')">“Desastres naturales” y “Situaciones
+                        de Riesgo”
+                        </button></li>
+                    <li><button id="20" onclick="gameOver('p7', '20')">“Situaciones de Riesgo” y “Los
+                        terremotos más catastróficos”
+                        </button></li>
+                    <li><button id="21" onclick="gameOver('p7', '21')">En ninguno
+                    </button></li>
+                    
+
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 8 -->
+        <article style="display: none;" class="main preguntas" id="p8">
+            <div>
+                <h2>8. ¿En qué libro buscarías información para redactar un texto expositivo?</h2>
+                
+                <ul>
+                    <li><button id="22" onclick="gameOver('p8','22')">“Los terremotos”
+                    </button></li>
+                    <li><button id="23" onclick="gameOver('p8', '23')">“Los terremotos más catastróficos”
+                    </button></li>
+                    <li><button id="24" onclick="gameOver('p8', '24')">“Desastres naturales”
+                    </button></li>
+                    <li><button onclick="victoria('p8')">En todos los anteriores.
+                    </button></li>
+
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 9 -->
+        <article style="display: none;" class="main preguntas" id="p9">
+            <div>
+                <h2>9. ¿En qué libro buscarías información para saber cómo se mide la intensidad de un terremoto?</h2>
+               
+                <ul>
+                    <li><button onclick="victoria('p9')">“Los terremotos”
+                    </button></li>
+                    <li><button id="25" onclick="gameOver('p9','25')">“Los terremotos más catastróficos”
+                    </button></li>
+                    <li><button id="26" onclick="gameOver('p9', '26')">“Desastres naturales”
+                    </button></li>
+                    <li><button id="27" onclick="gameOver('p9', '27')">“Situaciones de Riesgo”
+                    </button></li>
+
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 10 -->
+        <article style="display: none;" class="main preguntas" id="p10">
+            <div>
+                <h2>10. ¿En qué libro buscarías información para saber más acerca de los Tornados?</h2>
+                <ul>
+                    <li><button id="28" onclick="gameOver('p10','28')">“Los terremotos”
+                    </button></li>
+                    <li><button id="29" onclick="gameOver('p10', '29')">“Los terremotos más catastróficos”
+                    </button></li>
+                    <li><button onclick="victoria('p10')">“Desastres naturales”
+                    </button></li>
+                    <li><button id="30" onclick="gameOver('p10', '30')">“Situaciones de Riesgo”
+                    </button></li>
+                    
+                </ul>
+            </div>
+        </article>
+
+        <!-- Fin de Pantalla de preguntas -->
+
+
+
+
+
+        <!-- Pantalla de Game Over -->
+        <article style="display: none;" class="gameOver" id="gameOver">
+            <img src="../../../img/General-Trimestres/personaje-pregunta.png" alt="">
+            <p>Sigue Intentando <i class="fa-regular fa-face-frown"></i></p>
+            <button onclick="volverResponder()">Intentalo de Nuevo</button>
+        </article>
+        <!-- Fin de Pantalla Game Over -->
+
+
+        <!-- Pantalla de Victoria -->
+        <article style="display: none;" class="win" id="victoria">
+            <img src="../../../img/General-Trimestres/batman.png" alt="">
+            <p>¡BatiGenial!</p>
+            <button onclick="volverMenu()">Menu</button>
+        </article>
+        <!-- Fin de pantalla de Victoria -->
+
+    </main>
+    <!-- Agregando los scripts -->
+    <script src="../../../JS/main.js"></script>
+</body>
+
+</html>
